@@ -3,26 +3,12 @@
 #include "ImageEncoder.h"
 #include "Decode.h"
 
-//#include <cv.h>
 #include <opencv2/highgui.hpp>
-//#include <opencv2/imgproc/imgproc.hpp>
 
 using namespace std;
 using namespace cv;
 
 void decode(string output_image_name) {
-
-	/*
-	./decode output_image.png
-	argv[0] = ./decode
-	argv[1] = output_image.png
-	*/
-
-	// Checks if proper number of arguments are passed
-	/*if (argc != 2) {
-		cout << "Arguments Error" << "\n";
-		exit(-1);
-	}*/
 
 	// Stores original image
 	Mat image = imread(output_image_name);
